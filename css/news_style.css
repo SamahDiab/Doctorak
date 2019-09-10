@@ -34,7 +34,88 @@ body
     color: #fbca1b;
 }
 
+/* news */
 
+.card 
+{
+    overflow: hidden;
+}
+.card img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.card .btn-dark
+{
+    color: #00868d;;
+    background-color:#fff ; 
+    border: 2px solid #fff;
+    font-size: 20px;
+}
+.card .btn-dark:hover
+{
+    background-color: #00868d;
+    color: #fbca1b;
+}
+.news-container
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display:none ;
+}
+.popup-container
+{
+    width: 75%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    overflow: auto;
+}
+.popup-container .col-lg-6 , col-sm-12
+{
+    padding-right: 0 ;
+    padding-left: 0;
+}
+#wClose
+{
+    position: fixed;
+    top: 50px;
+    right: 137px;
+    cursor: pointer;
+    color: #fff; 
+    z-index: 1000;
+}
+.popup-container img
+{
+    width: 100%;
+    height: 500px;
+    margin: 0 0 0 20px
+}
+.popup-container .news-desc
+{
+    width: 100%;
+    
+}
+.news-desc h3
+{
+    font-weight: 700;
+    padding: 30px 50px 20px;
+}
+.news-desc p
+{
+    padding:10px 50px 0 ;
+    
+}
+.show
+{
+    display: flex;
+}
+/* news */
 
 
 /* contacts */
@@ -97,10 +178,27 @@ footer .social .twitter{
     
 }
 @media screen and (max-width:768px){
-    .footer-menu a{
+    .footer-menu a
+    {
         font-size: 12px;
         padding: 10px
     }
+    .popup-container
+    {
+        width: 90%;
+        height: 500px;
+    }
+    #wClose
+    {
+        position: fixed;
+        top: 37px;
+        right: 8px;   
+    }
+    .popup-container img
+    {
+        width: 100%;
+    }   
+    
     
 }
 @media screen and (max-width:530px){
